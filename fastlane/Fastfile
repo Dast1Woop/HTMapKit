@@ -52,7 +52,7 @@ platform :ios do
 
   increment_version_number_in_plist(
       version_number: target_version,
-      scheme: "HTMapKit",
+      target: "HTMapKit",
       xcodeproj: 'Example/Pods/Pods.xcodeproj'
   )      # 设置版本号
   version_bump_podspec(path: "HTMapKit.podspec",
