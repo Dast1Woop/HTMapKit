@@ -27,7 +27,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HTMapKit (0.1.0):
+  - HTMapKit (0.1.4):
     - AFNetworking (~> 4.0.1)
     - AMap3DMap-NO-IDFA (~> 7.9.0)
     - SnapKit (~> 5.0.1)
@@ -66,7 +66,7 @@ SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HTMapKit: 9aa0ab1bf3e324a1b8c0b1b39ae4edc52f16e3d8
+  HTMapKit: 1d6708f8b6772df945be1c7b78ff08d93df4899e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
