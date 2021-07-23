@@ -1,0 +1,11 @@
+framework module HTMapKit {
+  umbrella header "HTMapKit.h"
+
+  export *
+  module * { export * }
+}
+
+module HTMapKit.Swift {
+    header "HTMapKit-Swift.h"
+    requires objc
+}

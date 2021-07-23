@@ -1,0 +1,6 @@
+framework module Pods_HTMapKit_Tests {
+  umbrella header "Pods-HTMapKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
