@@ -50,7 +50,8 @@ platform :ios do
 #scan                                                          # 运行测试
 #sync_build_number_to_git                                      # 将 build 号设为 git commit 数
 
-  increment_version_number_in_plist(
+  increment_version_number(
+  #increment_version_number_in_plist(#报错：no implicit conversion of nil into String
       version_number: target_version
   )      # 设置版本号
   version_bump_podspec(path: "HTMapKit.podspec",
