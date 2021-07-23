@@ -44,7 +44,7 @@ platform :ios do
    target_version = options[:version]
   raise "The version is missed." if target_version.nil?
 
-  ensure_git_branch                                             # 确认 master 分支
+  ensure_git_branch( branch: 'main')                            # 确认 xx 分支,github现在默认是main分支，不是master
   ensure_git_status_clean                                       # 确认没有未提交的文件
 
 #scan                                                          # 运行测试
