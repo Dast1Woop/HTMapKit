@@ -36,7 +36,11 @@ DerivedData/
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
+<<<<<<< HEAD
 Pods/
+=======
+# Pods/
+>>>>>>> 31afa0a36752a01323fee0f93af8c7fbdb4cb154
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace
