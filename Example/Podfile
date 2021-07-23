@@ -4,14 +4,13 @@ platform :ios, '11.0'
 
 target 'HTMapKit_Example' do
   pod 'HTMapKit', :path => '../'
-  #pod 'HTMapKit'
 
   target 'HTMapKit_Tests' do
     inherit! :search_paths
 
-    pod 'Specta'
-    pod 'Expecta'
-    pod 'FBSnapshotTestCase'
-    pod 'Expecta+Snapshots'
+#    pod 'Specta'
+#    pod 'Expecta'
+#    pod 'FBSnapshotTestCase'
+#    pod 'Expecta+Snapshots'
   end
 end

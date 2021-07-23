@@ -1,6 +1,0 @@
-framework module HTMapKit {
-  umbrella header "HTMapKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
