@@ -51,7 +51,7 @@ platform :ios do
 #sync_build_number_to_git                                      # 将 build 号设为 git commit 数
 
   increment_version_number_in_plist(
-   target: 'HTMapKit',
+   #target: 'HTMapKit',
    version_number: target_version
    #xcodeproj: './Example/Pods/Pods.xcodeproj',
   
