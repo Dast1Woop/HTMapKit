@@ -19,3 +19,14 @@ FOUNDATION_EXPORT const unsigned char HTMapKitVersionString[];
 
 //给外界使用的，才需要用 #import <HTMapKit/PublicHeader.h>
 #import <HTMapKit/TestClass.h>
+#import <HTMapKit/HTMBuildingModel.h>
+#import <HTMapKit/HTMFloorModel.h>
+#import <HTMapKit/HTMModelCodingAndCopying.h>
+#import <HTMapKit/HTMSearchAPI.h>
+#import <HTMapKit/HTMBuildingNearbyRequest.h>
+#import <HTMapKit/HTMBuildingNearbyResponce.h>
+#import <HTMapKit/HTMBarrierGeometry.h>
+#import <HTMapKit/HTMBuildingConfig.h>
+#import <HTMapKit/HTMCoorTransforM4Mercator.h>
+#import <HTMapKit/HTMGlobalConfig.h>
+

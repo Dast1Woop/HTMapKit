@@ -191,8 +191,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import CoreLocation;
 @import MAMapKit;
+@import ObjectiveC;
 @import UIKit;
 #endif
+
+#import <HTMapKit/HTMapKit.h>
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -209,41 +212,165 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+SWIFT_CLASS("_TtC8HTMapKit16HTMCoorTransform")
+@interface HTMCoorTransform : NSObject
++ (CLLocationCoordinate2D)transformFromWGSToGCJ:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
++ (CLLocationCoordinate2D)transformFromGCJToBaidu:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
++ (CLLocationCoordinate2D)transformFromBaiduToGCJ:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
++ (CLLocationCoordinate2D)transformFromGCJToWGS:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
++ (CLLocationCoordinate2D)transformFromWGSToBaidu:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
++ (CLLocationCoordinate2D)transformFromBaiduToWGS:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
+/// 获取两点之间的距离
++ (double)distanceByPointWithLat1:(double)lat1 lat2:(double)lat2 lng1:(double)lng1 lng2:(double)lng2 SWIFT_WARN_UNUSED_RESULT;
+/// 获取两点之间的距离
++ (double)distanceByPointWithPoint1:(CLLocationCoordinate2D)point1 point2:(CLLocationCoordinate2D)point2 SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8HTMapKit17HTMUserLocateAnno")
+@interface HTMUserLocateAnno : MAAnimatedAnnotation
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MAMapView;
-@protocol HTMapViewDelegate4MAMap;
-@protocol HTMapViewDelegate4Self;
+@class UIPickerView;
+@class HTMFloorModel;
+@class HTMBuildingModel;
+@protocol HTMapViewDelegate;
 @class NSCoder;
+@class NSError;
 
 SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @interface HTMapView : UIView
 @property (nonatomic, readonly, strong) MAMapView * _Nonnull mapView;
-/// 高德地图代理，用于转发高德地图相关代理方法
-@property (nonatomic, weak) id <HTMapViewDelegate4MAMap> _Nullable delegate4MAMap;
-/// ht地图自身逻辑代理
-@property (nonatomic, weak) id <HTMapViewDelegate4Self> _Nullable delegate4Self;
+@property (nonatomic, readonly, strong) UIPickerView * _Nullable floorPickerView;
+/// 楼层数组
+@property (nonatomic, readonly, copy) NSArray<HTMFloorModel *> * _Nullable floorModelsArr;
+/// 当前地图需要或正在显示的 建筑模型，不一定是距离地图可见区中心点最近的模型。室内搜索 功能，需使用此建筑模型的buildingID。
+@property (nonatomic, readonly, strong) HTMBuildingModel * _Nullable buildingModelMapShowing;
+/// 地图代理，用于转发高德地图相关代理方法 + 自身逻辑代理
+@property (nonatomic, weak) id <HTMapViewDelegate> _Nullable delegateCustom;
+/// 是否显示盲道图层
+@property (nonatomic) BOOL isBlindLayerHidden;
+/// 是否显示轮椅图层
+@property (nonatomic) BOOL isWheelChairLayerHidden;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// 适配外界使用 约束 初始化当前类的对象
+- (void)layoutSubviews;
 - (void)setUpWithMapKey:(NSString * _Nonnull)mapKey;
+- (void)updateUserLocatorWithCoor:(CLLocationCoordinate2D)coor;
+/// 根据 floorID 切楼层
+- (NSError * _Nullable)changeFloor:(NSInteger)floorID SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class HTMBuildingNearbyRequest;
+@class HTMBuildingNearbyResponce;
+
+@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <HTMSearchDelegate>
+- (void)onBuildingNearbySearchDone:(HTMBuildingNearbyRequest * _Nonnull)request response:(HTMBuildingNearbyResponce * _Nonnull)response;
+- (void)HTMSearchRequest:(id _Nonnull)request didFailWithError:(NSError * _Nonnull)error;
+@end
+
+
+@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <UIPickerViewDataSource>
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <UIPickerViewDelegate>
+- (UIView * _Nonnull)pickerView:(UIPickerView * _Nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)pickerView:(UIPickerView * _Nonnull)pickerView widthForComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)pickerView:(UIPickerView * _Nonnull)pickerView rowHeightForComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+@end
+
+@protocol MAAnnotation;
+@class MAAnnotationView;
+@protocol MAOverlay;
+@class MAOverlayRenderer;
+@class UIControl;
 
 @interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <MAMapViewDelegate>
+/// 注意：有新瓦片需要下载时，才会回调！
+- (void)mapViewWillStartLoadingMap:(MAMapView * _Null_unspecified)mapView;
+/// 推荐使用，无论是否有新瓦片需要下载时，都会回调！！！
+- (void)mapInitComplete:(MAMapView * _Null_unspecified)mapView;
+- (void)mapViewDidFinishLoadingMap:(MAMapView * _Null_unspecified)mapView;
+- (void)mapViewDidFailLoadingMap:(MAMapView * _Null_unspecified)mapView withError:(NSError * _Null_unspecified)error;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView regionWillChangeAnimated:(BOOL)animated wasUserAction:(BOOL)wasUserAction;
+/// 地图区域 “改变过程中” 会调用此接口
+- (void)mapViewRegionChanged:(MAMapView * _Null_unspecified)mapView;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView regionDidChangeAnimated:(BOOL)animated wasUserAction:(BOOL)wasUserAction;
+- (MAAnnotationView * _Null_unspecified)mapView:(MAMapView * _Null_unspecified)mapView viewForAnnotation:(id <MAAnnotation> _Null_unspecified)annotation SWIFT_WARN_UNUSED_RESULT;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView didAddAnnotationViews:(NSArray * _Null_unspecified)views;
+- (MAOverlayRenderer * _Null_unspecified)mapView:(MAMapView * _Null_unspecified)mapView rendererForOverlay:(id <MAOverlay> _Null_unspecified)overlay SWIFT_WARN_UNUSED_RESULT;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView didAddOverlayRenderers:(NSArray * _Null_unspecified)overlayRenderers;
+- (void)offlineDataWillReload:(MAMapView * _Null_unspecified)mapView;
+- (void)offlineDataDidReload:(MAMapView * _Null_unspecified)mapView;
 - (void)mapView:(MAMapView * _Null_unspecified)mapView didTouchPois:(NSArray * _Null_unspecified)pois;
-- (void)mapView:(MAMapView * _Null_unspecified)mapView mapDidZoomByUser:(BOOL)wasUserAction;
 - (void)mapView:(MAMapView * _Null_unspecified)mapView didSingleTappedAtCoordinate:(CLLocationCoordinate2D)coordinate;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView didLongPressedAtCoordinate:(CLLocationCoordinate2D)coordinate;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView mapWillMoveByUser:(BOOL)wasUserAction;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView mapDidMoveByUser:(BOOL)wasUserAction;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView mapWillZoomByUser:(BOOL)wasUserAction;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView mapDidZoomByUser:(BOOL)wasUserAction;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView didSelectAnnotationView:(MAAnnotationView * _Null_unspecified)view;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView didDeselectAnnotationView:(MAAnnotationView * _Null_unspecified)view;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView didAnnotationViewTapped:(MAAnnotationView * _Null_unspecified)view;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView annotationView:(MAAnnotationView * _Null_unspecified)view calloutAccessoryControlTapped:(UIControl * _Null_unspecified)control;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView didAnnotationViewCalloutTapped:(MAAnnotationView * _Null_unspecified)view;
+- (void)mapView:(MAMapView * _Null_unspecified)mapView annotationView:(MAAnnotationView * _Null_unspecified)view didChangeDragState:(MAAnnotationViewDragState)newState fromOldState:(MAAnnotationViewDragState)oldState;
 @end
 
+@class UIImage;
+@class UILabel;
+@class CLLocationManager;
 
-SWIFT_PROTOCOL("_TtP8HTMapKit23HTMapViewDelegate4MAMap_")
-@protocol HTMapViewDelegate4MAMap
-- (void)mapView:(MAMapView * _Null_unspecified)mapView didTouchPois:(NSArray * _Null_unspecified)pois containedIn:(HTMapView * _Nonnull)containerview;
+/// 无注释的方法含义，参考 MAMapView.h 中去除 ‘ht_’ 后的同名方法注释
+SWIFT_PROTOCOL("_TtP8HTMapKit17HTMapViewDelegate_")
+@protocol HTMapViewDelegate <NSObject>
+@optional
+/// 设置定位点图片数据，必须返回 20x20 大小(@2x图片的话：40x40)
+- (UIImage * _Nonnull)ht_self_locatorImageForMapviewHT:(HTMapView * _Nonnull)mapviewHT SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)ht_self_setStyleInPikerViewWithSelected:(UILabel * _Nonnull)label mapviewHT:(HTMapView * _Nonnull)mapviewHT SWIFT_WARN_UNUSED_RESULT;
+- (void)ht_self_mapView:(MAMapView * _Null_unspecified)mapView didUpdate:(HTMUserLocateAnno * _Null_unspecified)userLocation updatingLocation:(BOOL)updatingLocation;
+- (void)ht_self_mapViewRequireLocationAuth:(CLLocationManager * _Null_unspecified)locationManager;
+/// 注意：有新瓦片需要下载时，才会回调！
+- (void)ht_mapViewWillStartLoadingMap:(MAMapView * _Null_unspecified)mapView;
+/// 推荐使用，无论是否有新瓦片需要下载时，都会回调！！！
+- (void)ht_mapInitComplete:(MAMapView * _Null_unspecified)mapView;
+/// 注意：有新瓦片需要下载时，才会回调！
+- (void)ht_mapViewDidFinishLoadingMap:(MAMapView * _Null_unspecified)mapView;
+- (void)ht_mapViewDidFailLoadingMap:(MAMapView * _Null_unspecified)mapView withError:(NSError * _Null_unspecified)error;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView regionWillChangeAnimated:(BOOL)animated wasUserAction:(BOOL)wasUserAction;
+/// 地图区域 “改变过程中” 会调用此接口，比较频繁
+- (void)ht_mapViewRegionChanged:(MAMapView * _Null_unspecified)mapView;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView regionDidChangeAnimated:(BOOL)animated wasUserAction:(BOOL)wasUserAction;
+- (MAAnnotationView * _Null_unspecified)ht_mapView:(MAMapView * _Null_unspecified)mapView viewFor:(id <MAAnnotation> _Null_unspecified)annotation SWIFT_WARN_UNUSED_RESULT;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didAddAnnotationViews:(NSArray * _Null_unspecified)views;
+- (MAOverlayRenderer * _Null_unspecified)ht_mapView:(MAMapView * _Null_unspecified)mapView rendererFor:(id <MAOverlay> _Null_unspecified)overlay SWIFT_WARN_UNUSED_RESULT;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didAddOverlayRenderers:(NSArray * _Null_unspecified)overlayRenderers;
+- (void)ht_offlineDataWillReload:(MAMapView * _Null_unspecified)mapView;
+- (void)ht_offlineDataDidReload:(MAMapView * _Null_unspecified)mapView;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didSingleTappedAt:(CLLocationCoordinate2D)coordinate;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didTouchPois:(NSArray * _Null_unspecified)pois;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didLongPressedAt:(CLLocationCoordinate2D)coordinate;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView mapWillMoveByUser:(BOOL)wasUserAction;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView mapDidMoveByUser:(BOOL)wasUserAction;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView mapWillZoomByUser:(BOOL)wasUserAction;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView mapDidZoomByUser:(BOOL)wasUserAction;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didSelect:(MAAnnotationView * _Null_unspecified)view;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didDeselect:(MAAnnotationView * _Null_unspecified)view;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didAnnotationViewTapped:(MAAnnotationView * _Null_unspecified)view;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView annotationView:(MAAnnotationView * _Null_unspecified)view calloutAccessoryControlTapped:(UIControl * _Null_unspecified)control;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didAnnotationViewCalloutTapped:(MAAnnotationView * _Null_unspecified)view;
+- (void)ht_mapView:(MAMapView * _Null_unspecified)mapView annotationView:(MAAnnotationView * _Null_unspecified)view didChange:(MAAnnotationViewDragState)newState fromOldState:(MAAnnotationViewDragState)oldState;
 @end
 
-
-SWIFT_PROTOCOL("_TtP8HTMapKit22HTMapViewDelegate4Self_")
-@protocol HTMapViewDelegate4Self
-- (void)test;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
