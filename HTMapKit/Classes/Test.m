@@ -9,6 +9,6 @@
 
 @implementation Test
 - (void)hello{
-    NSLog(@"hello");
+    NSLog(@"hello1");
 }
 @end
