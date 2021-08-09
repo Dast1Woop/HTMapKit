@@ -29,4 +29,5 @@ FOUNDATION_EXPORT const unsigned char HTMapKitVersionString[];
 #import <HTMapKit/HTMBuildingConfig.h>
 #import <HTMapKit/HTMCoorTransforM4Mercator.h>
 #import <HTMapKit/HTMGlobalConfig.h>
+#import <HTMapKit/HTMHeadingMoniter.h>
 

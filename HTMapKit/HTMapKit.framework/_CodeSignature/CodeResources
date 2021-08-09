@@ -600,6 +600,10 @@
 		<data>
 		3K12lV9m2bZrQvsw4XHtDg1eneE=
 		</data>
+		<key>Headers/HTMHeadingMoniter.h</key>
+		<data>
+		h21cXw/EJ7bf/LPuSb/e8D6jUzQ=
+		</data>
 		<key>Headers/HTMModelCodingAndCopying.h</key>
 		<data>
 		mXTfKRzEfci33bqmx1OGJSUTIZY=
@@ -610,11 +614,11 @@
 		</data>
 		<key>Headers/HTMapKit-Swift.h</key>
 		<data>
-		b8Pv4EtOtsu4ZXMttks6TNgphqM=
+		VJbkq+AIRmQltLu7PcWGhYol+2s=
 		</data>
 		<key>Headers/HTMapKit.h</key>
 		<data>
-		3W/yiT0IgXZI4aUnfXtuI7gBRB4=
+		4kIcq5qTT21v0QS7RB9eq+9wKj0=
 		</data>
 		<key>Headers/TestClass.h</key>
 		<data>
@@ -622,31 +626,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U7X//PvpJ1Bu2t04SjzVQoPH0Xg=
+		VI/hSQ2UhkHYXysi0eU4qvWNJRo=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		S0wllf5X4TLVjR/b2ytnkouw0Vk=
+		yQMf50d7pq7rmxI3bKBOAv4XwGw=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		S0wllf5X4TLVjR/b2ytnkouw0Vk=
+		yQMf50d7pq7rmxI3bKBOAv4XwGw=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		OsmHwIYAyQO9ifHSvmfRNNRFzB4=
+		IrZXIPyhtksf/JZCvZRpfZfHTuM=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8wv+Owef9xMpiL957h6PVG32qQM=
+		fi40ueN8T65OArEOT7ygAQojhMg=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		OsmHwIYAyQO9ifHSvmfRNNRFzB4=
+		IrZXIPyhtksf/JZCvZRpfZfHTuM=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8wv+Owef9xMpiL957h6PVG32qQM=
+		fi40ueN8T65OArEOT7ygAQojhMg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2294,6 +2298,17 @@
 			e5V5D9XaBgZxOiQ8h/sIF3y/dp/S0ERjkL/44b17sFI=
 			</data>
 		</dict>
+		<key>Headers/HTMHeadingMoniter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h21cXw/EJ7bf/LPuSb/e8D6jUzQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			8a9vP1mO7h8FYdFCMEFsoBFv+HDDu6v1JrxdUWHbBpI=
+			</data>
+		</dict>
 		<key>Headers/HTMModelCodingAndCopying.h</key>
 		<dict>
 			<key>hash</key>
@@ -2320,22 +2335,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b8Pv4EtOtsu4ZXMttks6TNgphqM=
+			VJbkq+AIRmQltLu7PcWGhYol+2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			rpqBr5D8Zg+lfVUOlFLocPTckx6urOUDK81VxipXUNw=
+			eohAUVYvnTu/XtO4yJASvVi4I0GNFgwyIlN4emWpB6Q=
 			</data>
 		</dict>
 		<key>Headers/HTMapKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3W/yiT0IgXZI4aUnfXtuI7gBRB4=
+			4kIcq5qTT21v0QS7RB9eq+9wKj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZDkFVAuNBz/75qndXmD2QTIBS1w1HJDDdWhN8g+88w4=
+			lDQ5PJuYRIJCP9Jco4Z4VcFQDTQ/T/TL+FrxjW5eBTw=
 			</data>
 		</dict>
 		<key>Headers/TestClass.h</key>
@@ -2353,66 +2368,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S0wllf5X4TLVjR/b2ytnkouw0Vk=
+			yQMf50d7pq7rmxI3bKBOAv4XwGw=
 			</data>
 			<key>hash2</key>
 			<data>
-			u8nymBplsHW82Y6cHKmDAsGb5LLPYm0bj7K82zuzlFE=
+			aYyLI989RZc1OJKV9wnNVlFK3bHLZs1FkgpeRL6rWZ0=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S0wllf5X4TLVjR/b2ytnkouw0Vk=
+			yQMf50d7pq7rmxI3bKBOAv4XwGw=
 			</data>
 			<key>hash2</key>
 			<data>
-			u8nymBplsHW82Y6cHKmDAsGb5LLPYm0bj7K82zuzlFE=
+			aYyLI989RZc1OJKV9wnNVlFK3bHLZs1FkgpeRL6rWZ0=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OsmHwIYAyQO9ifHSvmfRNNRFzB4=
+			IrZXIPyhtksf/JZCvZRpfZfHTuM=
 			</data>
 			<key>hash2</key>
 			<data>
-			lB6fVxj/vdSVmbB7ywZlOfTkVMwmwIsxXadEMdCF/ws=
+			P7hyaLTHrdlA6dk+pkMUcRvTfEEKXxEhQ5n3x46aZZU=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8wv+Owef9xMpiL957h6PVG32qQM=
+			fi40ueN8T65OArEOT7ygAQojhMg=
 			</data>
 			<key>hash2</key>
 			<data>
-			l4ZlCIAybaRIsUAD6+Yd8IvmIRIaLpx5wbpKlMWrY0I=
+			etQrRt34Dkjkr6/O+sYmTjGJmNML4nALnbMczCnnxUo=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OsmHwIYAyQO9ifHSvmfRNNRFzB4=
+			IrZXIPyhtksf/JZCvZRpfZfHTuM=
 			</data>
 			<key>hash2</key>
 			<data>
-			lB6fVxj/vdSVmbB7ywZlOfTkVMwmwIsxXadEMdCF/ws=
+			P7hyaLTHrdlA6dk+pkMUcRvTfEEKXxEhQ5n3x46aZZU=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8wv+Owef9xMpiL957h6PVG32qQM=
+			fi40ueN8T65OArEOT7ygAQojhMg=
 			</data>
 			<key>hash2</key>
 			<data>
-			l4ZlCIAybaRIsUAD6+Yd8IvmIRIaLpx5wbpKlMWrY0I=
+			etQrRt34Dkjkr6/O+sYmTjGJmNML4nALnbMczCnnxUo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

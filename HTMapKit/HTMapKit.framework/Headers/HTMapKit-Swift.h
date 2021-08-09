@@ -240,7 +240,6 @@ SWIFT_CLASS("_TtC8HTMapKit17HTMUserLocateAnno")
 @class HTMBuildingModel;
 @protocol HTMapViewDelegate;
 @class NSCoder;
-@class NSError;
 
 SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @interface HTMapView : UIView
@@ -263,7 +262,20 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)setUpWithMapKey:(NSString * _Nonnull)mapKey;
 - (void)updateUserLocatorWithCoor:(CLLocationCoordinate2D)coor;
 /// 根据 floorID 切楼层
-- (NSError * _Nullable)changeFloor:(NSInteger)floorID SWIFT_WARN_UNUSED_RESULT;
+- (void)changeFloor:(NSInteger)floorID;
+@end
+
+@class HTMHeadingMoniter;
+@class CLLocationManager;
+
+@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <HTMHeadingMoniterDelegate>
+- (void)dmMoniter:(HTMHeadingMoniter * _Null_unspecified)monitor locationManager:(CLLocationManager * _Null_unspecified)manager didUpdateTrueHeading:(CLLocationDirection)newHeading;
+@end
+
+
+@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <UIPickerViewDataSource>
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class HTMBuildingNearbyRequest;
@@ -272,12 +284,6 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <HTMSearchDelegate>
 - (void)onBuildingNearbySearchDone:(HTMBuildingNearbyRequest * _Nonnull)request response:(HTMBuildingNearbyResponce * _Nonnull)response;
 - (void)HTMSearchRequest:(id _Nonnull)request didFailWithError:(NSError * _Nonnull)error;
-@end
-
-
-@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <UIPickerViewDataSource>
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -302,7 +308,7 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)mapViewDidFinishLoadingMap:(MAMapView * _Null_unspecified)mapView;
 - (void)mapViewDidFailLoadingMap:(MAMapView * _Null_unspecified)mapView withError:(NSError * _Null_unspecified)error;
 - (void)mapView:(MAMapView * _Null_unspecified)mapView regionWillChangeAnimated:(BOOL)animated wasUserAction:(BOOL)wasUserAction;
-/// 地图区域 “改变过程中” 会调用此接口
+/// 地图区域 “改变过程中” 会调用此接口（地图旋转也会触发）
 - (void)mapViewRegionChanged:(MAMapView * _Null_unspecified)mapView;
 - (void)mapView:(MAMapView * _Null_unspecified)mapView regionDidChangeAnimated:(BOOL)animated wasUserAction:(BOOL)wasUserAction;
 - (MAAnnotationView * _Null_unspecified)mapView:(MAMapView * _Null_unspecified)mapView viewForAnnotation:(id <MAAnnotation> _Null_unspecified)annotation SWIFT_WARN_UNUSED_RESULT;
@@ -328,15 +334,15 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 
 @class UIImage;
 @class UILabel;
-@class CLLocationManager;
 
 /// 无注释的方法含义，参考 MAMapView.h 中去除 ‘ht_’ 后的同名方法注释
 SWIFT_PROTOCOL("_TtP8HTMapKit17HTMapViewDelegate_")
 @protocol HTMapViewDelegate <NSObject>
 @optional
-/// 设置定位点图片数据，必须返回 20x20 大小(@2x图片的话：40x40)
+/// 设置定位点图片数据，建议返回 30点x30点 大小(@2x图片的话：60x60)，根据显示效果调整素材大小。
 - (UIImage * _Nonnull)ht_self_locatorImageForMapviewHT:(HTMapView * _Nonnull)mapviewHT SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)ht_self_setStyleInPikerViewWithSelected:(UILabel * _Nonnull)label mapviewHT:(HTMapView * _Nonnull)mapviewHT SWIFT_WARN_UNUSED_RESULT;
+- (void)ht_self_didChangeFloorWithFloorID:(NSInteger)floorID;
 - (void)ht_self_mapView:(MAMapView * _Null_unspecified)mapView didUpdate:(HTMUserLocateAnno * _Null_unspecified)userLocation updatingLocation:(BOOL)updatingLocation;
 - (void)ht_self_mapViewRequireLocationAuth:(CLLocationManager * _Null_unspecified)locationManager;
 /// 注意：有新瓦片需要下载时，才会回调！
