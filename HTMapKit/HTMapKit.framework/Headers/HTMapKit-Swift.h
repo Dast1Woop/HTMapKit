@@ -215,6 +215,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC8HTMapKit16HTMCoorTransform")
 @interface HTMCoorTransform : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (CLLocationCoordinate2D)transformFromWGSToGCJ:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
 + (CLLocationCoordinate2D)transformFromGCJToBaidu:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
 + (CLLocationCoordinate2D)transformFromBaiduToGCJ:(CLLocationCoordinate2D)wgsLoc SWIFT_WARN_UNUSED_RESULT;
@@ -225,12 +227,20 @@ SWIFT_CLASS("_TtC8HTMapKit16HTMCoorTransform")
 + (double)distanceByPointWithLat1:(double)lat1 lat2:(double)lat2 lng1:(double)lng1 lng2:(double)lng2 SWIFT_WARN_UNUSED_RESULT;
 /// 获取两点之间的距离
 + (double)distanceByPointWithPoint1:(CLLocationCoordinate2D)point1 point2:(CLLocationCoordinate2D)point2 SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class HTMRoutePath;
+@class UIImage;
 
-SWIFT_CLASS("_TtC8HTMapKit17HTMUserLocateAnno")
-@interface HTMUserLocateAnno : MAAnimatedAnnotation
+SWIFT_CLASS("_TtC8HTMapKit18HTMRouteDrawConfig")
+@interface HTMRouteDrawConfig : NSObject
+@property (nonatomic, strong) HTMRoutePath * _Nullable path;
+@property (nonatomic) NSInteger highlightedFloorID;
+/// DoderBlue    道奇蓝    #1E90FF    30,144,255
+@property (nonatomic, strong) UIImage * _Nonnull highlightedImage;
+/// Silver    银白色    #C0C0C0    192,192,192
+@property (nonatomic, strong) UIImage * _Nonnull dimImage;
+- (nonnull instancetype)initWithPath:(HTMRoutePath * _Nonnull)path highlightedFloorID:(NSInteger)highlightedFloorID highlightedImage:(UIImage * _Nullable)highlightedImage dimImage:(UIImage * _Nullable)dimImage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -255,6 +265,7 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @property (nonatomic) BOOL isBlindLayerHidden;
 /// 是否显示轮椅图层
 @property (nonatomic) BOOL isWheelChairLayerHidden;
+@property (nonatomic) BOOL isRoutePathShowing;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// 适配外界使用 约束 初始化当前类的对象
@@ -263,6 +274,9 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)updateUserLocatorWithCoor:(CLLocationCoordinate2D)coor;
 /// 根据 floorID 切楼层
 - (void)changeFloor:(NSInteger)floorID;
+- (void)clearRoute;
+/// 显示路径，有 “缩放到全路网可见” 的效果。
+- (void)showRouteWithConfig:(HTMRouteDrawConfig * _Nullable)config;
 @end
 
 @class HTMHeadingMoniter;
@@ -272,18 +286,18 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)dmMoniter:(HTMHeadingMoniter * _Null_unspecified)monitor locationManager:(CLLocationManager * _Null_unspecified)manager didUpdateTrueHeading:(CLLocationDirection)newHeading;
 @end
 
-
-@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <UIPickerViewDataSource>
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
-@end
-
 @class HTMBuildingNearbyRequest;
 @class HTMBuildingNearbyResponce;
 
 @interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <HTMSearchDelegate>
 - (void)onBuildingNearbySearchDone:(HTMBuildingNearbyRequest * _Nonnull)request response:(HTMBuildingNearbyResponce * _Nonnull)response;
 - (void)HTMSearchRequest:(id _Nonnull)request didFailWithError:(NSError * _Nonnull)error;
+@end
+
+
+@interface HTMapView (SWIFT_EXTENSION(HTMapKit)) <UIPickerViewDataSource>
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -332,7 +346,6 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)mapView:(MAMapView * _Null_unspecified)mapView annotationView:(MAAnnotationView * _Null_unspecified)view didChangeDragState:(MAAnnotationViewDragState)newState fromOldState:(MAAnnotationViewDragState)oldState;
 @end
 
-@class UIImage;
 @class UILabel;
 
 /// 无注释的方法含义，参考 MAMapView.h 中去除 ‘ht_’ 后的同名方法注释
@@ -343,8 +356,6 @@ SWIFT_PROTOCOL("_TtP8HTMapKit17HTMapViewDelegate_")
 - (UIImage * _Nonnull)ht_self_locatorImageForMapviewHT:(HTMapView * _Nonnull)mapviewHT SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)ht_self_setStyleInPikerViewWithSelected:(UILabel * _Nonnull)label mapviewHT:(HTMapView * _Nonnull)mapviewHT SWIFT_WARN_UNUSED_RESULT;
 - (void)ht_self_didChangeFloorWithFloorID:(NSInteger)floorID;
-- (void)ht_self_mapView:(MAMapView * _Null_unspecified)mapView didUpdate:(HTMUserLocateAnno * _Null_unspecified)userLocation updatingLocation:(BOOL)updatingLocation;
-- (void)ht_self_mapViewRequireLocationAuth:(CLLocationManager * _Null_unspecified)locationManager;
 /// 注意：有新瓦片需要下载时，才会回调！
 - (void)ht_mapViewWillStartLoadingMap:(MAMapView * _Null_unspecified)mapView;
 /// 推荐使用，无论是否有新瓦片需要下载时，都会回调！！！
