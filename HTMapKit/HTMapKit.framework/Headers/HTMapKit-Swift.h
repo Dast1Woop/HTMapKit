@@ -266,6 +266,8 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 /// 是否显示轮椅图层
 @property (nonatomic) BOOL isWheelChairLayerHidden;
 @property (nonatomic) BOOL isRoutePathShowing;
+@property (nonatomic) BOOL isLogEnable;
+@property (nonatomic, readonly) NSInteger floorIDMapShowing;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// 适配外界使用 约束 初始化当前类的对象

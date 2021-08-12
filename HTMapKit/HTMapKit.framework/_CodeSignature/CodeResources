@@ -568,6 +568,34 @@
 		<data>
 		0UNY9YE01iz4oGzi5thvGModNgs=
 		</data>
+		<key>AMap.bundle/skybox/back.png</key>
+		<data>
+		2OvtPQQmuyEV2V0jiAW1ioCxWZs=
+		</data>
+		<key>AMap.bundle/skybox/bottom.png</key>
+		<data>
+		/qfodumIBNPwErmyfjBOBkirbS4=
+		</data>
+		<key>AMap.bundle/skybox/front.png</key>
+		<data>
+		ybvrs6ZuHDlqlKRLlXT9gk/SBV8=
+		</data>
+		<key>AMap.bundle/skybox/left.png</key>
+		<data>
+		9gG6Ibz+p+Kl5XtIy/gK0P+RPY8=
+		</data>
+		<key>AMap.bundle/skybox/right.png</key>
+		<data>
+		dZkWYcBaCEEF/CLAO4Gy8u0wu8A=
+		</data>
+		<key>AMap.bundle/skybox/top.png</key>
+		<data>
+		kXME9h53e6Yj5iSyX8kMVc2P4A4=
+		</data>
+		<key>AMap.bundle/terrainStyle.data</key>
+		<data>
+		pdpxTcIWYX4PSQMbtNoSOceUoUU=
+		</data>
 		<key>Headers/HTMBarrierGeometry.h</key>
 		<data>
 		jV+dMYE2glmVgbpc0cb0o9TsnWY=
@@ -614,7 +642,7 @@
 		</data>
 		<key>Headers/HTMModelCodingAndCopying.h</key>
 		<data>
-		mXTfKRzEfci33bqmx1OGJSUTIZY=
+		6ZwaHjvyjQfA+G7KQ63JwTPCicU=
 		</data>
 		<key>Headers/HTMPublicTransportRequest.h</key>
 		<data>
@@ -662,7 +690,7 @@
 		</data>
 		<key>Headers/HTMapKit-Swift.h</key>
 		<data>
-		q0c7jPYPWV3L/zE9CgyhRhDd9xE=
+		ExLR093L64vkLqjGw0iFa1CgdUk=
 		</data>
 		<key>Headers/HTMapKit.h</key>
 		<data>
@@ -678,15 +706,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		a9i0YTEmblmY7usdZBLAkpVv+0U=
+		8cT4sMQ40YpbLBoOCWCVTVNxa8E=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		dOUT+o1Vdvia6m4a+9rzKXOcA0s=
+		6JUFlm4dRaPBVpzxW0S0zZj5RpA=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		dOUT+o1Vdvia6m4a+9rzKXOcA0s=
+		6JUFlm4dRaPBVpzxW0S0zZj5RpA=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -694,7 +722,7 @@
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+CFJX7m9uOH2yVYhPM22xmvQeEk=
+		xLhu0UUiwkQmdedRAArBECBPgZw=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -702,7 +730,7 @@
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		+CFJX7m9uOH2yVYhPM22xmvQeEk=
+		xLhu0UUiwkQmdedRAArBECBPgZw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2262,6 +2290,83 @@
 			Fh43GmsXIKwFXZUa2tiUQI76YE4We9qIGk8168bFlsE=
 			</data>
 		</dict>
+		<key>AMap.bundle/skybox/back.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2OvtPQQmuyEV2V0jiAW1ioCxWZs=
+			</data>
+			<key>hash2</key>
+			<data>
+			roNP72MX0jkGD8t5aZRSVoYKEL/en8aW/y5UqPcVn0U=
+			</data>
+		</dict>
+		<key>AMap.bundle/skybox/bottom.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/qfodumIBNPwErmyfjBOBkirbS4=
+			</data>
+			<key>hash2</key>
+			<data>
+			GlVi9JVWR5Sy87KnOV0II+mOMn4yjqspetAv504JG7U=
+			</data>
+		</dict>
+		<key>AMap.bundle/skybox/front.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ybvrs6ZuHDlqlKRLlXT9gk/SBV8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Cb1tXUF5FMuGVTqfvmUWWM+H7XtvjrUksgMfarjvG5I=
+			</data>
+		</dict>
+		<key>AMap.bundle/skybox/left.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9gG6Ibz+p+Kl5XtIy/gK0P+RPY8=
+			</data>
+			<key>hash2</key>
+			<data>
+			kGSSGV+EXbm4go5H7VWvka1bhzMcI3cdboL/pX/+opY=
+			</data>
+		</dict>
+		<key>AMap.bundle/skybox/right.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dZkWYcBaCEEF/CLAO4Gy8u0wu8A=
+			</data>
+			<key>hash2</key>
+			<data>
+			FjerA3JKoWLaQ7ovHFBk44F+zHPU2dSrrW4ibCd5lj4=
+			</data>
+		</dict>
+		<key>AMap.bundle/skybox/top.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kXME9h53e6Yj5iSyX8kMVc2P4A4=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ih778w5wt75+OQHAn541WS0bvdxZ9lVOwDKLqm79heg=
+			</data>
+		</dict>
+		<key>AMap.bundle/terrainStyle.data</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pdpxTcIWYX4PSQMbtNoSOceUoUU=
+			</data>
+			<key>hash2</key>
+			<data>
+			JUmFZA/kyHFLcxS0nkOJQ6MfJRKNMr4H5B5a7JtZ4/Y=
+			</data>
+		</dict>
 		<key>Headers/HTMBarrierGeometry.h</key>
 		<dict>
 			<key>hash</key>
@@ -2387,11 +2492,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mXTfKRzEfci33bqmx1OGJSUTIZY=
+			6ZwaHjvyjQfA+G7KQ63JwTPCicU=
 			</data>
 			<key>hash2</key>
 			<data>
-			1r6Rmg0alZ7bLRa/SjGkSmCWuONYcP8EXmBZScSR/8s=
+			sMBZYhCwjC7ZnoYJGhWgpspVKdM8+RAlfkhPGGPh5MY=
 			</data>
 		</dict>
 		<key>Headers/HTMPublicTransportRequest.h</key>
@@ -2519,11 +2624,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q0c7jPYPWV3L/zE9CgyhRhDd9xE=
+			ExLR093L64vkLqjGw0iFa1CgdUk=
 			</data>
 			<key>hash2</key>
 			<data>
-			B905WC4b4oM7zdhHEFBkkkMNLxL7ckC4ckFXzLYKSzE=
+			DKI7O9KE9Kr37BBrRrcaPjM0gIvb6J4OlnvzM1qgr2A=
 			</data>
 		</dict>
 		<key>Headers/HTMapKit.h</key>
@@ -2563,22 +2668,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dOUT+o1Vdvia6m4a+9rzKXOcA0s=
+			6JUFlm4dRaPBVpzxW0S0zZj5RpA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ct3g25bBt2xcummIBtdBZImlB6nCVXSvcQ/LSHITyDw=
+			kGsm2R5Z0+OHuQ12SPE1IUN8fmV0l+i+21X9TLet320=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dOUT+o1Vdvia6m4a+9rzKXOcA0s=
+			6JUFlm4dRaPBVpzxW0S0zZj5RpA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ct3g25bBt2xcummIBtdBZImlB6nCVXSvcQ/LSHITyDw=
+			kGsm2R5Z0+OHuQ12SPE1IUN8fmV0l+i+21X9TLet320=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -2596,11 +2701,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+CFJX7m9uOH2yVYhPM22xmvQeEk=
+			xLhu0UUiwkQmdedRAArBECBPgZw=
 			</data>
 			<key>hash2</key>
 			<data>
-			xgQO7Rja4HeenTao/2LUk+JSshSa8RZx9KUJJo63wlg=
+			rTqJUpTHE1rjBEWOxeDKnuvbM54CRIt/t7TcwWiQxpI=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
@@ -2618,11 +2723,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+CFJX7m9uOH2yVYhPM22xmvQeEk=
+			xLhu0UUiwkQmdedRAArBECBPgZw=
 			</data>
 			<key>hash2</key>
 			<data>
-			xgQO7Rja4HeenTao/2LUk+JSshSa8RZx9KUJJo63wlg=
+			rTqJUpTHE1rjBEWOxeDKnuvbM54CRIt/t7TcwWiQxpI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
