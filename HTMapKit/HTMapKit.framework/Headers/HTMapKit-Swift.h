@@ -236,11 +236,13 @@ SWIFT_CLASS("_TtC8HTMapKit18HTMRouteDrawConfig")
 @interface HTMRouteDrawConfig : NSObject
 @property (nonatomic, strong) HTMRoutePath * _Nullable path;
 @property (nonatomic) NSInteger highlightedFloorID;
-/// DoderBlue    道奇蓝    #1E90FF    30,144,255
+/// 默认：DoderBlue    道奇蓝    #1E90FF    30,144,255
 @property (nonatomic, strong) UIImage * _Nonnull highlightedImage;
-/// Silver    银白色    #C0C0C0    192,192,192
+/// 默认：Silver    银白色    #C0C0C0    192,192,192
 @property (nonatomic, strong) UIImage * _Nonnull dimImage;
-- (nonnull instancetype)initWithPath:(HTMRoutePath * _Nonnull)path highlightedFloorID:(NSInteger)highlightedFloorID highlightedImage:(UIImage * _Nullable)highlightedImage dimImage:(UIImage * _Nullable)dimImage;
+/// 默认：灰色    #808080    128,128,128
+@property (nonatomic, strong) UIImage * _Nonnull walkedPartImage;
+- (nonnull instancetype)initWithPath:(HTMRoutePath * _Nonnull)path highlightedFloorID:(NSInteger)highlightedFloorID highlightedImage:(UIImage * _Nullable)highlightedImage dimImage:(UIImage * _Nullable)dimImage walkedPartImage:(UIImage * _Nullable)walkedPartImage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -279,9 +281,10 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)updateUserLocatorWithCoor:(CLLocationCoordinate2D)coor;
 /// 根据 floorID 切楼层
 - (void)changeFloor:(NSInteger)floorID;
-- (void)clearRoute;
 /// 显示路径，有 “缩放到全路网可见” 的效果。
 - (void)showRouteWithConfig:(HTMRouteDrawConfig * _Nullable)config;
+- (void)updateRoutePathUserWalkedWithPathIndex:(NSUInteger)index projectionCoor:(CLLocationCoordinate2D)projectionCoor;
+- (void)clearRoutesOfWholeBaseAndWalked;
 @end
 
 @class HTMHeadingMoniter;
