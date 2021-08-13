@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYModel', '~> 1.0.4'
   #,:modular_headers => true #not supported
   
-  s.dependency 'AMap3DMap-NO-IDFA', '~>7.9.0'
+  s.dependency 'AMap3DMap-NO-IDFA', '~>8.0.0'
   
   s.dependency 'SnapKit', '~>5.0.1'
   
