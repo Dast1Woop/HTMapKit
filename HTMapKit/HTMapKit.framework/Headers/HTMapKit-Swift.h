@@ -253,6 +253,9 @@ SWIFT_CLASS("_TtC8HTMapKit18HTMRouteDrawConfig")
 
 SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @interface HTMapView : UIView
+/// 注意事项：
+/// 1.高德地图对象相关代理，必须通过 HTMapViewDelegate4MAMap 的代理方法使用，不能在模块外设置 mapView:MAMapView 的代理;
+/// 2.sdk内统一使用 gcj02 坐标交互（目标）;
 @property (nonatomic, readonly, strong) MAMapView * _Nonnull mapView;
 @property (nonatomic, readonly, strong) UIPickerView * _Nullable floorPickerView;
 /// 楼层数组
@@ -261,9 +264,9 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @property (nonatomic, readonly, strong) HTMBuildingModel * _Nullable buildingModelMapShowing;
 /// 地图代理，用于转发高德地图相关代理方法 + 自身逻辑代理
 @property (nonatomic, weak) id <HTMapViewDelegate> _Nullable delegateCustom;
-/// 是否显示盲道图层
+/// 是否显示盲道图层，默认显示
 @property (nonatomic) BOOL isBlindLayerHidden;
-/// 是否显示轮椅图层
+/// 是否显示轮椅图层，默认隐藏
 @property (nonatomic) BOOL isWheelChairLayerHidden;
 @property (nonatomic) BOOL isRoutePathShowing;
 @property (nonatomic) BOOL isLogEnable;

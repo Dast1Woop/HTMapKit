@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HTMBuildingModel : NSObject
 
 /// 建筑id
-@property(nonatomic, copy) NSString *identifier;
+@property(nonatomic, copy) NSString *buildingID;
 
 /// 默认的建筑名
 @property(nonatomic, copy) NSString *name;

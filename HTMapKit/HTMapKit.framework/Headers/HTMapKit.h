@@ -31,13 +31,13 @@ FOUNDATION_EXPORT const unsigned char HTMapKitVersionString[];
 #import <HTMapKit/HTMGlobalConfig.h>
 #import <HTMapKit/HTMHeadingMoniter.h>
 
-//#import <HTMapKit/HTMPOISearchRequestByID.h>
-//#import <HTMapKit/HTMPOISearchRequestByLocation.h>
-//#import <HTMapKit/HTMPOISearchRequestByMultiCombine.h>
-//#import <HTMapKit/HTMPOISearchResponse.h>
-//
-//#import <HTMapKit/HTMPOICategorySearchRequest.h>
-//#import <HTMapKit/HTMPOICategorySearchResponse.h>
+#import <HTMapKit/HTMPOISearchRequestByID.h>
+#import <HTMapKit/HTMPOISearchRequestByLocation.h>
+#import <HTMapKit/HTMPOISearchRequestByMultiCombine.h>
+#import <HTMapKit/HTMPOISearchResponse.h>
+
+#import <HTMapKit/HTMPOICategorySearchRequest.h>
+#import <HTMapKit/HTMPOICategorySearchResponse.h>
 
 #import <HTMapKit/HTMRouteSearchRequest.h>
 #import <HTMapKit/HTMRouteSearchResponse.h>
@@ -54,28 +54,26 @@ FOUNDATION_EXPORT const unsigned char HTMapKitVersionString[];
 #import <HTMapKit/HTMRoutePaths.h>
 #import <HTMapKit/HTMRoutePath.h>
 
-//#import <HTMapKit/HTMPoi.h>
-//#import <HTMapKit/HTMPoiCategory.h>
-//#import <HTMapKit/HTMPOICategorySearchRequestByType.h>
-//#import <HTMapKit/HTMPOISearchRequestByPoiID.h>
-//
-//#import <HTMapKit/HTMRoadNetModel.h>
-//
-//#import <HTMapKit/HTMRegionLocationRequest.h>
-//#import <HTMapKit/HTMRegionInfoRequest.h>
-//#import <HTMapKit/HTMRegionInfoResponse.h>
-//#import <HTMapKit/HTMSubRegionsRequest.h>
-//
-//#import <HTMapKit/HTMMenu.h>
-//#import <HTMapKit/HTMMenuSearchRequest.h>
-//#import <HTMapKit/HTMMenuSearchResponse.h>
-//
-//#import <HTMapKit/HTMPublicTransportRequest.h>
-//#import <HTMapKit/HTMPublicTransportResponse.h>
-//
+#import <HTMapKit/HTMPoi.h>
+#import <HTMapKit/HTMPoiCategory.h>
+#import <HTMapKit/HTMPOICategorySearchRequestByType.h>
+#import <HTMapKit/HTMPOISearchRequestByPoiID.h>
+
+#import <HTMapKit/HTMRoadNetModel.h>
+
+#import <HTMapKit/HTMRegionLocationRequest.h>
+#import <HTMapKit/HTMRegionInfoRequest.h>
+#import <HTMapKit/HTMRegionInfoResponse.h>
+#import <HTMapKit/HTMSubRegionsRequest.h>
+
+#import <HTMapKit/HTMMenu.h>
+#import <HTMapKit/HTMMenuSearchRequest.h>
+#import <HTMapKit/HTMMenuSearchResponse.h>
+
+#import <HTMapKit/HTMPublicTransportRequest.h>
+#import <HTMapKit/HTMPublicTransportResponse.h>
+
 //#import <HTMapKit/HTMSimulateNavigator.h>
-//
-//#import <HTMapKit/HTMPolyline.h>
-//
-//#import <HTMapKit/HTMVersion.h>
+
+#import <HTMapKit/HTMVersion.h>
 
