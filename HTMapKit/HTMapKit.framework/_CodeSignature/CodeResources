@@ -738,7 +738,7 @@
 		</data>
 		<key>Headers/HTMRoutePlanNode.h</key>
 		<data>
-		ONR6ZUKPjbFLRytEk83yD5Aje8c=
+		TBy0L2mINfvlCHAdWVCbcfprQYY=
 		</data>
 		<key>Headers/HTMRoutePlanPoints.h</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>Headers/HTMapKit-Swift.h</key>
 		<data>
-		WUxQOVyoTkYe3UAe96RZFVEUunM=
+		2JPEhhZCufWN4MZ/0kNQCXb0Dx8=
 		</data>
 		<key>Headers/HTMapKit.h</key>
 		<data>
@@ -782,31 +782,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Uk+V5K/HrGdSQnbIGz1hnv2mM2c=
+		13YDSBycU4iir/PueDWXf4nPMx4=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Umczz4F/KwPV7r/WTZ3qBq8Puxk=
+		M0MUbIwDNc0AOFRxSHV4/GNtldQ=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		Umczz4F/KwPV7r/WTZ3qBq8Puxk=
+		M0MUbIwDNc0AOFRxSHV4/GNtldQ=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		QLoUzu6hp6KWJMQct+4w1agOBnI=
+		Ma5q2IHswbVa1LWTZZZkgWhiJQw=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HDqx/Y0trxOKMXBOTNZ4W/5y9Nk=
+		kS7Hpyrfq4lDOEvOLm41CMQctms=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		QLoUzu6hp6KWJMQct+4w1agOBnI=
+		Ma5q2IHswbVa1LWTZZZkgWhiJQw=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		HDqx/Y0trxOKMXBOTNZ4W/5y9Nk=
+		kS7Hpyrfq4lDOEvOLm41CMQctms=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2832,11 +2832,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ONR6ZUKPjbFLRytEk83yD5Aje8c=
+			TBy0L2mINfvlCHAdWVCbcfprQYY=
 			</data>
 			<key>hash2</key>
 			<data>
-			9YZqnZgb7MrhqYZ0E3YgQDl0i34Z7Zc+Dagv3EdEXqM=
+			dEcKk2RR9VLwAnVz7am6Ve5VqQf2tiKbS52jeeCcaCo=
 			</data>
 		</dict>
 		<key>Headers/HTMRoutePlanPoints.h</key>
@@ -2909,11 +2909,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WUxQOVyoTkYe3UAe96RZFVEUunM=
+			2JPEhhZCufWN4MZ/0kNQCXb0Dx8=
 			</data>
 			<key>hash2</key>
 			<data>
-			lm2633hxBEu2WDtMrsAVXbH+Y2tCyV04lOnkwulTTAw=
+			w41VHM1PRqGQB4OlgbIQoOGriyApAwanktLvA2AODNU=
 			</data>
 		</dict>
 		<key>Headers/HTMapKit.h</key>
@@ -2953,66 +2953,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Umczz4F/KwPV7r/WTZ3qBq8Puxk=
+			M0MUbIwDNc0AOFRxSHV4/GNtldQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			XEGvUisQppQ8JsaBut+ytg3bq/UQSsrLGQuKOQkvzp0=
+			ElYWkoOBCwGvDmpvq7E+1cvOVyT+0KPI/IhDiOuTunw=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Umczz4F/KwPV7r/WTZ3qBq8Puxk=
+			M0MUbIwDNc0AOFRxSHV4/GNtldQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			XEGvUisQppQ8JsaBut+ytg3bq/UQSsrLGQuKOQkvzp0=
+			ElYWkoOBCwGvDmpvq7E+1cvOVyT+0KPI/IhDiOuTunw=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QLoUzu6hp6KWJMQct+4w1agOBnI=
+			Ma5q2IHswbVa1LWTZZZkgWhiJQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			kV6VTxuVuZ0MzKfNKh0iCs5Jv8sOcKQ6zJstBrszjak=
+			DjaKs9eEnA8fP29gRTcTqJ22q82o1Er8UAodR5ShUCQ=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HDqx/Y0trxOKMXBOTNZ4W/5y9Nk=
+			kS7Hpyrfq4lDOEvOLm41CMQctms=
 			</data>
 			<key>hash2</key>
 			<data>
-			lTyh5XuvMTfwSrK6BCZ12Rf+rUlg2pldC7vHkk7CDx0=
+			jaxTzJ5rbfkvdgQjI0obpL8lffd9NZh6sHW+tqU9iSg=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QLoUzu6hp6KWJMQct+4w1agOBnI=
+			Ma5q2IHswbVa1LWTZZZkgWhiJQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			kV6VTxuVuZ0MzKfNKh0iCs5Jv8sOcKQ6zJstBrszjak=
+			DjaKs9eEnA8fP29gRTcTqJ22q82o1Er8UAodR5ShUCQ=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HDqx/Y0trxOKMXBOTNZ4W/5y9Nk=
+			kS7Hpyrfq4lDOEvOLm41CMQctms=
 			</data>
 			<key>hash2</key>
 			<data>
-			lTyh5XuvMTfwSrK6BCZ12Rf+rUlg2pldC7vHkk7CDx0=
+			jaxTzJ5rbfkvdgQjI0obpL8lffd9NZh6sHW+tqU9iSg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** mapID */
 @property(nonatomic, copy) NSString *mapId;
 
-///记录导航点在整个导航文本数组中的下标，用于模拟导航功能
+///记录导航点在整个导航文本数组中的下标，用于模拟导航功能; 从 0 开始
 @property (nonatomic, assign) NSUInteger pathNumber;
 
 ///是否是拐点，用于模拟导航中文本提示回调

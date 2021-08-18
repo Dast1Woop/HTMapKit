@@ -281,8 +281,13 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)updateUserLocatorWithCoor:(CLLocationCoordinate2D)coor;
 /// 根据 floorID 切楼层
 - (void)changeFloor:(NSInteger)floorID;
-/// 显示路径，有 “缩放到全路网可见” 的效果。
+/// 显示路径，有 “缩放到全路网可见” + “清除之前路径画线和已走路线”  的效果。
 - (void)showRouteWithConfig:(HTMRouteDrawConfig * _Nullable)config;
+/// 更新已走路线画线，内部会先调用 clearRouteWalked() 移除旧的已走路线画线
+/// \param index 所在路段下标
+///
+/// \param projectionCoor 投影点坐标
+///
 - (void)updateRoutePathUserWalkedWithPathIndex:(NSUInteger)index projectionCoor:(CLLocationCoordinate2D)projectionCoor;
 - (void)clearRoutesOfWholeBaseAndWalked;
 @end
