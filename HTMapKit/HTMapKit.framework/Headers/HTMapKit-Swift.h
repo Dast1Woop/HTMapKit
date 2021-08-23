@@ -251,7 +251,9 @@ SWIFT_CLASS("_TtC8HTMapKit18HTMRouteDrawConfig")
 @class HTMFloorModel;
 @class HTMBuildingModel;
 @protocol HTMapViewDelegate;
+enum HTUserTrackingMode : NSInteger;
 @class NSCoder;
+@class NSError;
 
 SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @interface HTMapView : UIView
@@ -272,15 +274,15 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @property (nonatomic) BOOL isWheelChairLayerHidden;
 @property (nonatomic) BOOL isRoutePathShowing;
 @property (nonatomic) BOOL isLogEnable;
-@property (nonatomic, readonly) NSInteger floorIDMapShowing;
+@property (nonatomic) enum HTUserTrackingMode mapviewUserTrackingModeCustom;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// 适配外界使用 约束 初始化当前类的对象
 - (void)layoutSubviews;
 - (void)setUpWithMapKey:(NSString * _Nonnull)mapKey;
 - (void)updateUserLocatorWithCoor:(CLLocationCoordinate2D)coor;
-/// 根据 floorID 切楼层
-- (void)changeFloor:(NSInteger)floorID;
+/// 根据 floorID 切楼层（前提：必须设置地图比例大于17，当前屏幕已显示室内图层），如果失败，内部会每隔 0.5s 递归调用自己尝试切楼层，直到成功；成功时，会回调代理方法 ht_self_didChangeFloor
+- (NSError * _Nullable)changeFloor:(NSInteger)floorID SWIFT_WARN_UNUSED_RESULT;
 /// 显示路径，有 “缩放到全路网可见” + “清除之前路径画线和已走路线”  的效果。
 - (void)showRouteWithConfig:(HTMRouteDrawConfig * _Nullable)config;
 /// 更新已走路线画线，内部会先调用 clearRouteWalked() 移除旧的已走路线画线
@@ -400,6 +402,11 @@ SWIFT_PROTOCOL("_TtP8HTMapKit17HTMapViewDelegate_")
 - (void)ht_mapView:(MAMapView * _Null_unspecified)mapView didAnnotationViewCalloutTapped:(MAAnnotationView * _Null_unspecified)view;
 - (void)ht_mapView:(MAMapView * _Null_unspecified)mapView annotationView:(MAAnnotationView * _Null_unspecified)view didChange:(MAAnnotationViewDragState)newState fromOldState:(MAAnnotationViewDragState)oldState;
 @end
+
+typedef SWIFT_ENUM(NSInteger, HTUserTrackingMode, closed) {
+  HTUserTrackingModeNone = 0,
+  HTUserTrackingModeFollow = 1,
+};
 
 
 #if __has_attribute(external_source_symbol)
