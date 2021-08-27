@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, HTMCoorType) {
 /// @param type 坐标类型
 NSString * _Nullable HTMSearchCoorTypeStringFor(HTMCoorType type);
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HTMSearchCoorTypeModel : NSObject
@@ -32,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)modelWithDefalutSetting;
 
 + (instancetype)modelWithInputCoordsType:(HTMCoorType)inputType outputCoordsType:(HTMCoorType)outputType;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

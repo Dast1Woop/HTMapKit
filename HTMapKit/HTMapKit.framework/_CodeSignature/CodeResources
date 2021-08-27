@@ -606,7 +606,7 @@
 		</data>
 		<key>Headers/HTMBuildingModel.h</key>
 		<data>
-		45h2VqNAvIUq2tojac+oLruPpSo=
+		Hg18ynsXfSpPQC2QgREFS42fUYk=
 		</data>
 		<key>Headers/HTMBuildingNearbyRequest.h</key>
 		<data>
@@ -758,7 +758,7 @@
 		</data>
 		<key>Headers/HTMSearchCoorTypeModel.h</key>
 		<data>
-		KiAypiObehH1lUtdMJg7PQFKv+Q=
+		SCghF8TRAspuh1YTY9zUOkWWfmg=
 		</data>
 		<key>Headers/HTMSubRegionsRequest.h</key>
 		<data>
@@ -786,31 +786,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		K/puKW2W3dxaoCNNpVueSy1SbTQ=
+		Ju7Y8OqhiYHQin2pirCQWYxCGbA=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		EMEkbpwJc0zoqkCn0gKb4RqLHzI=
+		1B7dpjx58D/5zfJCJs03qks/s0Q=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		EMEkbpwJc0zoqkCn0gKb4RqLHzI=
+		1B7dpjx58D/5zfJCJs03qks/s0Q=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		UqDgykh3sjnHokcYR97i6MkybAQ=
+		NO6z3Aba3kYVzfuhGqBzNw341gs=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		lYzzHpVgZpmBma43peevR2nAHuc=
+		tpZ7zhprzo32r4u/Qz7Efi771eY=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		UqDgykh3sjnHokcYR97i6MkybAQ=
+		NO6z3Aba3kYVzfuhGqBzNw341gs=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		lYzzHpVgZpmBma43peevR2nAHuc=
+		tpZ7zhprzo32r4u/Qz7Efi771eY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2473,11 +2473,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			45h2VqNAvIUq2tojac+oLruPpSo=
+			Hg18ynsXfSpPQC2QgREFS42fUYk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1SgOBfk0STVZn5darD83Qomff7NYHob+aOgMyT3bf2s=
+			auQ5FXxBTj3BvsgmLI5pcefHyQeg7ITJS5ow/mzbUmk=
 			</data>
 		</dict>
 		<key>Headers/HTMBuildingNearbyRequest.h</key>
@@ -2891,11 +2891,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KiAypiObehH1lUtdMJg7PQFKv+Q=
+			SCghF8TRAspuh1YTY9zUOkWWfmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZOmQz2O04ytMex6EY929zlk81Z+wF/fJzbBV0JoivrM=
+			6blzaeEWkxpXSy+uSv7dY5KjDtAzHVrP/4r7faiYvZw=
 			</data>
 		</dict>
 		<key>Headers/HTMSubRegionsRequest.h</key>
@@ -2968,66 +2968,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EMEkbpwJc0zoqkCn0gKb4RqLHzI=
+			1B7dpjx58D/5zfJCJs03qks/s0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			bg1r7lq7aGkserjKJ3W4vrbW7TDZKZNA1iysQDJkZnQ=
+			PgthUxvXzjzinjd23IdRPQe6sFw2B8WeBdUVUMoJgIs=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EMEkbpwJc0zoqkCn0gKb4RqLHzI=
+			1B7dpjx58D/5zfJCJs03qks/s0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			bg1r7lq7aGkserjKJ3W4vrbW7TDZKZNA1iysQDJkZnQ=
+			PgthUxvXzjzinjd23IdRPQe6sFw2B8WeBdUVUMoJgIs=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UqDgykh3sjnHokcYR97i6MkybAQ=
+			NO6z3Aba3kYVzfuhGqBzNw341gs=
 			</data>
 			<key>hash2</key>
 			<data>
-			NetOR73i7w/OrqUW7L586EO4fBCCqKCaGeNLwvHBE7Q=
+			fXpR5FdeVoX0CSnGKPTOW9qbClPnRG3Mf1yKitYx7oE=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lYzzHpVgZpmBma43peevR2nAHuc=
+			tpZ7zhprzo32r4u/Qz7Efi771eY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q/4Nr408eUIFdLd+1mq+XD+eM3pnYHAoxz7u8rzQDbM=
+			T7gWHaisYGQE8gxHkAEGfW93H9v+a+JbmH+mI41q3BA=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UqDgykh3sjnHokcYR97i6MkybAQ=
+			NO6z3Aba3kYVzfuhGqBzNw341gs=
 			</data>
 			<key>hash2</key>
 			<data>
-			NetOR73i7w/OrqUW7L586EO4fBCCqKCaGeNLwvHBE7Q=
+			fXpR5FdeVoX0CSnGKPTOW9qbClPnRG3Mf1yKitYx7oE=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lYzzHpVgZpmBma43peevR2nAHuc=
+			tpZ7zhprzo32r4u/Qz7Efi771eY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q/4Nr408eUIFdLd+1mq+XD+eM3pnYHAoxz7u8rzQDbM=
+			T7gWHaisYGQE8gxHkAEGfW93H9v+a+JbmH+mI41q3BA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

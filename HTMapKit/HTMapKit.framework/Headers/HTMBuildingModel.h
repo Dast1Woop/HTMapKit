@@ -29,11 +29,14 @@ NS_ASSUME_NONNULL_BEGIN
 ///楼层信息数组
 @property(nonatomic, copy) NSArray<HTMFloorModel*> *floorModelsArr;
 
-///用于计算距离屏幕中心点的距离，用于排序逻辑
-@property (nonatomic, assign) double distance4Calculate;
+///用于计算 轮廓所有点 距离屏幕中心点的最小距离，用于排序逻辑
+@property (nonatomic, assign) double minDistance2MapviewCenter;
 
 ///遮罩坐标信息
 @property (nonatomic, strong) HTMBarrierGeometry *barrierGeometry;
+
+/// 地图可视范围内的点集
+@property (nonatomic, copy, nullable) NSArray<NSArray<NSNumber *> *> *visibleCoordinates;
 
 ///地图的特殊配置信息 2021-07-23 目前有 enablePosition 是否支持定位
 @property (nonatomic, strong) HTMBuildingConfig *config;
