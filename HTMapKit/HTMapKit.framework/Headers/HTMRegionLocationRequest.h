@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+@class HTMSearchCoorTypeModel;
+
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
  eg2: level = 3时，搜索结果回调数组:[国家, 省, 市]。拿数组中最后一个对象就能获取到市的信息。
  */
 @property (nonatomic, assign) int level;
+
+/// 输入输出坐标类型(使用 gcj02 坐标系)，210903 add
+@property (nonatomic,strong, readonly) HTMSearchCoorTypeModel *ioCoorTypeModel;
 
 - (instancetype)initWithCoor:(CLLocationCoordinate2D)coor2D level:(int)level;
 + (instancetype)requestWithCoor:(CLLocationCoordinate2D)coor2D

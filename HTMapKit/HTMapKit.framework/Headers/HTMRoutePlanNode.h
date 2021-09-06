@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param lat 纬度
  @return HTMRoutePlanNode 对象
  */
-- (instancetype)initWithLng:(double)lng lat:(double)lat;
+- (instancetype)initWithLngGcj02:(double)lng latGcj02:(double)lat;
 
 /**
   通过经纬度创建路径规划点
@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param lat 纬度
  @return TMRoutePlanNode 对象
  */
-+ (instancetype)nodeWithLng:(double)lng lat:(double)lat;
++ (instancetype)nodeWithLngGcj02:(double)lng latGcj02:(double)lat;
 
 /**
  通过经纬度等参数创建路径规划点
@@ -54,20 +54,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param mapId 节点所在地图id
  @return TMRoutePlanNode 对象
  */
-+ (instancetype)nodeWithLng:(double)lng
-                        lat:(double)lat
-                    floorID:(int)floorID
-                       name:(NSString *)name
-                      mapId:(NSString *)mapId;
++ (instancetype)nodeWithLngGcj02:(double)lng
+                        latGcj02:(double)lat
+                         floorID:(int)floorID
+                            name:(NSString *)name
+                           mapId:(NSString *)mapId;
 
 - (double)getDistanceWithNode:(HTMRoutePlanNode *)node;
-
-
-/// 根据AB点和系数（0~1）的值，获取中间点坐标对象
-/// @param nodeA 起点
-/// @param nodeB 终点
-/// @param lanEnTa 系数
-+ (instancetype)getObjWithNodeA:(HTMRoutePlanNode *)nodeA nodeB:(HTMRoutePlanNode *)nodeB lanEnTa:(double)lanEnTa;
 
 + (CLLocationCoordinate2D)getMaxLatAndMaxLngWith:(NSArray <HTMRoutePlanNode *> *)arr;
 

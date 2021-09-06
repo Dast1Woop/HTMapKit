@@ -10,13 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// sdk内部统一使用 gcj02 坐标
 @interface HTMGeoCoor : NSObject<NSCopying, NSCoding>
 
 /// 经度
-@property (nonatomic, assign) double lng;
+@property (nonatomic, assign) double lngGcj02;
 
 /// 纬度
-@property (nonatomic, assign) double lat;
+@property (nonatomic, assign) double latGcj02;
 
 /// 楼层id。已重写get方法，没赋值时，返回@""
 @property (nonatomic, copy) NSString *floorId;

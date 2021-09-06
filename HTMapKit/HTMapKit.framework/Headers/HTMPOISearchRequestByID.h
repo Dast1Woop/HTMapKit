@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@class HTMSearchCoorTypeModel;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -48,6 +50,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 //优先策略：wheelchair无障碍优先（默认），distance距离优先;非必须
 @property(nonatomic, copy) NSString *priority;
+
+/// 输入输出坐标类型(使用 gcj02 坐标系)，210903 add
+@property (nonatomic,strong, readonly) HTMSearchCoorTypeModel *ioCoorTypeModel;
 
 @end
 

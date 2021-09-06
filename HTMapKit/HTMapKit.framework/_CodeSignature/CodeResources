@@ -610,7 +610,7 @@
 		</data>
 		<key>Headers/HTMBuildingNearbyRequest.h</key>
 		<data>
-		XMgGMAyLKK9mz+0wAZ6w2SHbVDk=
+		I0aOAxkOqM/c640WSp4Xl4JjEdo=
 		</data>
 		<key>Headers/HTMBuildingNearbyResponce.h</key>
 		<data>
@@ -630,7 +630,7 @@
 		</data>
 		<key>Headers/HTMGeoCoor.h</key>
 		<data>
-		3hxkdDJxZbnHVA8FkEQxOAbcMyI=
+		AoubpsR3N7gq5Swwo11/tL6g9LM=
 		</data>
 		<key>Headers/HTMGlobalConfig.h</key>
 		<data>
@@ -670,19 +670,19 @@
 		</data>
 		<key>Headers/HTMPOISearchRequestByID.h</key>
 		<data>
-		5r4dd4p2RSWG36JcBs2TJvORqBw=
+		0pGITNeDaJiNvTJdsbGvsWA4n3w=
 		</data>
 		<key>Headers/HTMPOISearchRequestByLocation.h</key>
 		<data>
-		d4a06MVPOM61iyHLPbZx6ZQDjT0=
+		nUysN0mXbvKuwAg4PLts4L9gsaw=
 		</data>
 		<key>Headers/HTMPOISearchRequestByMultiCombine.h</key>
 		<data>
-		Z/QajHG1D2ELAe9DNS7mn1gx1VM=
+		QuhqBxg5M+xkiDLmvNHGEnB6dj8=
 		</data>
 		<key>Headers/HTMPOISearchRequestByPoiID.h</key>
 		<data>
-		sJ20HP4fMePAs9cWgu64KkdnzaM=
+		AvfJcR3qNiaGb1A//S1JjFDKfy0=
 		</data>
 		<key>Headers/HTMPOISearchResponse.h</key>
 		<data>
@@ -698,7 +698,7 @@
 		</data>
 		<key>Headers/HTMPublicTransportRequest.h</key>
 		<data>
-		sndcHzMl/0hjXWzUSu5JjodnW8s=
+		tNqKrkILWemYtOhl6HJ7IU6CTs4=
 		</data>
 		<key>Headers/HTMPublicTransportResponse.h</key>
 		<data>
@@ -706,7 +706,7 @@
 		</data>
 		<key>Headers/HTMRegionInfoRequest.h</key>
 		<data>
-		rN8PpBpxO3SLWtp3dYtMPfJRiKw=
+		1wyb1aDeUGK2queJxSuDQfuS2bs=
 		</data>
 		<key>Headers/HTMRegionInfoResponse.h</key>
 		<data>
@@ -714,7 +714,7 @@
 		</data>
 		<key>Headers/HTMRegionLocationRequest.h</key>
 		<data>
-		4JzvjMYKCCDJjA8GnmInMwbPERY=
+		tAxWxaukvDD9UrdyQoXzFZAlQpU=
 		</data>
 		<key>Headers/HTMRegionLocationResponse.h</key>
 		<data>
@@ -738,7 +738,7 @@
 		</data>
 		<key>Headers/HTMRoutePlanNode.h</key>
 		<data>
-		TBy0L2mINfvlCHAdWVCbcfprQYY=
+		/3oJmgSp/Jo34ZusMCKIoqF0QcA=
 		</data>
 		<key>Headers/HTMRoutePlanPoints.h</key>
 		<data>
@@ -746,7 +746,7 @@
 		</data>
 		<key>Headers/HTMRouteSearchRequest.h</key>
 		<data>
-		YnjPLq6QiGWWrsLAVZrVIoCegOQ=
+		sPL9DTHJnz4gDuEXe2kL2JDVutQ=
 		</data>
 		<key>Headers/HTMRouteSearchResponse.h</key>
 		<data>
@@ -758,11 +758,11 @@
 		</data>
 		<key>Headers/HTMSearchCoorTypeModel.h</key>
 		<data>
-		SCghF8TRAspuh1YTY9zUOkWWfmg=
+		25q/QkB3C1VMG23C9482TufNkJY=
 		</data>
 		<key>Headers/HTMSubRegionsRequest.h</key>
 		<data>
-		a3CK75orybNWz/folwvBvJqLEww=
+		beBglkhwJKqmgn1aU3WReqveWrI=
 		</data>
 		<key>Headers/HTMVersion.h</key>
 		<data>
@@ -770,11 +770,11 @@
 		</data>
 		<key>Headers/HTMapKit-Swift.h</key>
 		<data>
-		vVLcM9Pcp9j97aibyMbzexKRMec=
+		F+jiB3tFUEhiuT2n/LQ5aenAIig=
 		</data>
 		<key>Headers/HTMapKit.h</key>
 		<data>
-		wjThojO9tRllij1iCZGa5u798RY=
+		5Na7krYoA68VZqi3EY2cJNuz6sc=
 		</data>
 		<key>Headers/NSString+MYLCategory.h</key>
 		<data>
@@ -786,31 +786,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ju7Y8OqhiYHQin2pirCQWYxCGbA=
+		IvrrfwzLpX2gWEwWzuBubjWu960=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		1B7dpjx58D/5zfJCJs03qks/s0Q=
+		UuSYEFVtOmeSSt7YxDNTozyYQlo=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		1B7dpjx58D/5zfJCJs03qks/s0Q=
+		UuSYEFVtOmeSSt7YxDNTozyYQlo=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NO6z3Aba3kYVzfuhGqBzNw341gs=
+		3jdldZwOakMeIFARoaaD8PB4fiE=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tpZ7zhprzo32r4u/Qz7Efi771eY=
+		l0k783xEhIuLmtcMayUBs63gGi0=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		NO6z3Aba3kYVzfuhGqBzNw341gs=
+		3jdldZwOakMeIFARoaaD8PB4fiE=
 		</data>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		tpZ7zhprzo32r4u/Qz7Efi771eY=
+		l0k783xEhIuLmtcMayUBs63gGi0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2484,11 +2484,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XMgGMAyLKK9mz+0wAZ6w2SHbVDk=
+			I0aOAxkOqM/c640WSp4Xl4JjEdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Oz+SVfoj9tuqJnxveB5tuyjt2QHqgOChSTASB+YNVeQ=
+			aj1ATOiHjfTlr75ZaE4IPE1ySkuKHsNgpI33bLfRNpI=
 			</data>
 		</dict>
 		<key>Headers/HTMBuildingNearbyResponce.h</key>
@@ -2539,11 +2539,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3hxkdDJxZbnHVA8FkEQxOAbcMyI=
+			AoubpsR3N7gq5Swwo11/tL6g9LM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ChGhGA1J85cJ66x9QFai27sOIH4yJMDiTc0XXa/ios8=
+			6DR+OFxQ2HmTRrPvH2lhJ6sRjNfydFnK+NeaixaygSc=
 			</data>
 		</dict>
 		<key>Headers/HTMGlobalConfig.h</key>
@@ -2649,44 +2649,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5r4dd4p2RSWG36JcBs2TJvORqBw=
+			0pGITNeDaJiNvTJdsbGvsWA4n3w=
 			</data>
 			<key>hash2</key>
 			<data>
-			dFmABeUJvPCtHd7oTHrz7TLkg4P8S9Ltkmop0eMjzzI=
+			XfYgHJE/OAgB36fBI84axQqDcFDKYPMT5HxIC0HSw0w=
 			</data>
 		</dict>
 		<key>Headers/HTMPOISearchRequestByLocation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d4a06MVPOM61iyHLPbZx6ZQDjT0=
+			nUysN0mXbvKuwAg4PLts4L9gsaw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z5+M3KnPE4TCmryF0KXZa81Snkiu1wgbDlKmnS78NhE=
+			uorEdrYnH3abl3LPAGH5/ANXmhezuaS0txLNhMcng5U=
 			</data>
 		</dict>
 		<key>Headers/HTMPOISearchRequestByMultiCombine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z/QajHG1D2ELAe9DNS7mn1gx1VM=
+			QuhqBxg5M+xkiDLmvNHGEnB6dj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			8JdqBhCgjVqhn1958ZrFkWIEfmvb/NFV5As2SCPTznI=
+			2UFGvISgBm8Slz2qlJ6MtrTWT7K4b1l53UxLoiL2BFY=
 			</data>
 		</dict>
 		<key>Headers/HTMPOISearchRequestByPoiID.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sJ20HP4fMePAs9cWgu64KkdnzaM=
+			AvfJcR3qNiaGb1A//S1JjFDKfy0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TQiPYhreD2f1Rxai/TSJQiYsaEcPj7iUxpyGswKivcE=
+			X9B5vkyltrFYXBMPcvFkhM+yQVg+zzf7SB8/mHa+w3E=
 			</data>
 		</dict>
 		<key>Headers/HTMPOISearchResponse.h</key>
@@ -2726,11 +2726,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sndcHzMl/0hjXWzUSu5JjodnW8s=
+			tNqKrkILWemYtOhl6HJ7IU6CTs4=
 			</data>
 			<key>hash2</key>
 			<data>
-			xjWvJbmiswmFL0QA5jBxljrXwFoQU4VmXFtD7UPwcNg=
+			j2AJD8YYFq6w+A43Xp+tl7ZUvWqTTqf8hV90OhCI3sg=
 			</data>
 		</dict>
 		<key>Headers/HTMPublicTransportResponse.h</key>
@@ -2748,11 +2748,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rN8PpBpxO3SLWtp3dYtMPfJRiKw=
+			1wyb1aDeUGK2queJxSuDQfuS2bs=
 			</data>
 			<key>hash2</key>
 			<data>
-			95fQtCd1pCsea3OgrFDgpaG++RSVu0Gp8JSIcRB7Tiw=
+			edwiaNHKcotnhSx0O4jT5enqN6dzf/O8i/WZhUFThSQ=
 			</data>
 		</dict>
 		<key>Headers/HTMRegionInfoResponse.h</key>
@@ -2770,11 +2770,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4JzvjMYKCCDJjA8GnmInMwbPERY=
+			tAxWxaukvDD9UrdyQoXzFZAlQpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			cpfswOed2pHQcXRWeT+6wKmCnBUrlh6PL7Utvb9v0QU=
+			tm60pBT1ghfgZvr9X0547qX+9fkDmTNmTMy9YMtDnss=
 			</data>
 		</dict>
 		<key>Headers/HTMRegionLocationResponse.h</key>
@@ -2836,11 +2836,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TBy0L2mINfvlCHAdWVCbcfprQYY=
+			/3oJmgSp/Jo34ZusMCKIoqF0QcA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dEcKk2RR9VLwAnVz7am6Ve5VqQf2tiKbS52jeeCcaCo=
+			MLiZAHnuh/54VDefoGx74FYi01nWUEGbmYLswquAQMA=
 			</data>
 		</dict>
 		<key>Headers/HTMRoutePlanPoints.h</key>
@@ -2858,11 +2858,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YnjPLq6QiGWWrsLAVZrVIoCegOQ=
+			sPL9DTHJnz4gDuEXe2kL2JDVutQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			7N7nPc7qEU68E+XD+vhVX5wSgeZdY3h2p7DOjNAUcXg=
+			kXI9pxbtz0gcXqqDasQ+Cskr1S9sIxmj/8nBo02Zx/A=
 			</data>
 		</dict>
 		<key>Headers/HTMRouteSearchResponse.h</key>
@@ -2891,22 +2891,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SCghF8TRAspuh1YTY9zUOkWWfmg=
+			25q/QkB3C1VMG23C9482TufNkJY=
 			</data>
 			<key>hash2</key>
 			<data>
-			6blzaeEWkxpXSy+uSv7dY5KjDtAzHVrP/4r7faiYvZw=
+			UAUWqOaIAjYTznLdMa8jBVLOwumsDLbh7d3SsfWtyTA=
 			</data>
 		</dict>
 		<key>Headers/HTMSubRegionsRequest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a3CK75orybNWz/folwvBvJqLEww=
+			beBglkhwJKqmgn1aU3WReqveWrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			KSDQ3oK0MLFhF2cFTnKYBF8Jm46XhDPsHia132aMG7A=
+			bDr1IwHO1i73C4UqdvSjB+3T9aTVH8kom+ucrMMU+vQ=
 			</data>
 		</dict>
 		<key>Headers/HTMVersion.h</key>
@@ -2924,22 +2924,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vVLcM9Pcp9j97aibyMbzexKRMec=
+			F+jiB3tFUEhiuT2n/LQ5aenAIig=
 			</data>
 			<key>hash2</key>
 			<data>
-			3dpiSG472a1Aq0UEBvIpWLFYCAuv1GxNqQmu5xboinw=
+			vU8EBUqmOdO4kuFmJlVG5JMJYugkjUUbuSL2Kalb7tA=
 			</data>
 		</dict>
 		<key>Headers/HTMapKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wjThojO9tRllij1iCZGa5u798RY=
+			5Na7krYoA68VZqi3EY2cJNuz6sc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lh21UOkCQd/4Ytd1iNjxeTPBvkIVZ58AEnn2PSoIMgg=
+			IxrlJGRBErFNHUywpDiEXphfAFLCVIzFns4hDFXnuVY=
 			</data>
 		</dict>
 		<key>Headers/NSString+MYLCategory.h</key>
@@ -2968,66 +2968,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1B7dpjx58D/5zfJCJs03qks/s0Q=
+			UuSYEFVtOmeSSt7YxDNTozyYQlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PgthUxvXzjzinjd23IdRPQe6sFw2B8WeBdUVUMoJgIs=
+			Eo+bPsYvhvm4FszADeWw5+fxn8FjfENsnXKT4rQbs40=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1B7dpjx58D/5zfJCJs03qks/s0Q=
+			UuSYEFVtOmeSSt7YxDNTozyYQlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PgthUxvXzjzinjd23IdRPQe6sFw2B8WeBdUVUMoJgIs=
+			Eo+bPsYvhvm4FszADeWw5+fxn8FjfENsnXKT4rQbs40=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NO6z3Aba3kYVzfuhGqBzNw341gs=
+			3jdldZwOakMeIFARoaaD8PB4fiE=
 			</data>
 			<key>hash2</key>
 			<data>
-			fXpR5FdeVoX0CSnGKPTOW9qbClPnRG3Mf1yKitYx7oE=
+			NkadqqQjHl6AmixY+wSDApffWuZvHtUcmPTGQkIek+Y=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tpZ7zhprzo32r4u/Qz7Efi771eY=
+			l0k783xEhIuLmtcMayUBs63gGi0=
 			</data>
 			<key>hash2</key>
 			<data>
-			T7gWHaisYGQE8gxHkAEGfW93H9v+a+JbmH+mI41q3BA=
+			l6ij9ZWHkGsPCbMJfdClbA4hb/M03u+Fp3MfI4YHao4=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NO6z3Aba3kYVzfuhGqBzNw341gs=
+			3jdldZwOakMeIFARoaaD8PB4fiE=
 			</data>
 			<key>hash2</key>
 			<data>
-			fXpR5FdeVoX0CSnGKPTOW9qbClPnRG3Mf1yKitYx7oE=
+			NkadqqQjHl6AmixY+wSDApffWuZvHtUcmPTGQkIek+Y=
 			</data>
 		</dict>
 		<key>Modules/HTMapKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tpZ7zhprzo32r4u/Qz7Efi771eY=
+			l0k783xEhIuLmtcMayUBs63gGi0=
 			</data>
 			<key>hash2</key>
 			<data>
-			T7gWHaisYGQE8gxHkAEGfW93H9v+a+JbmH+mI41q3BA=
+			l6ij9ZWHkGsPCbMJfdClbA4hb/M03u+Fp3MfI4YHao4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

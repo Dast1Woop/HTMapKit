@@ -45,7 +45,6 @@ FOUNDATION_EXPORT const unsigned char HTMapKitVersionString[];
 #import <HTMapKit/NSString+MYLCategory.h>
 
 #import <HTMapKit/HTMGeoCoor.h>
-#import <HTMapKit/HTMCoorTransform4Mercator.h>
 
 #import <HTMapKit/HTMEnumDefines.h>
 #import <HTMapKit/HTMRoutePlanInstruction.h>

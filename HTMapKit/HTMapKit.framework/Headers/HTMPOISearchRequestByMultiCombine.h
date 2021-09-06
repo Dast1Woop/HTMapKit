@@ -65,8 +65,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 室内楼层id,指定时，只返回此楼层poi
 @property(nonatomic, copy) NSString *floorId4Filter;
 
-/// 输入输出坐标类型，210823 add
-@property (nonatomic,strong) HTMSearchCoorTypeModel *ioCoorTypeModel;
+/// 输入输出坐标类型(不设置时，内部输入、输出坐标，默认使用 gcj02 坐标系)，210823 add
+@property (nonatomic,strong, readonly) HTMSearchCoorTypeModel *ioCoorTypeModel;
 
 @end
 

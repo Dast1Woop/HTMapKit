@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 @class HTMGeoCoor;
 #import "HTMEnumDefines.h"
+@class HTMSearchCoorTypeModel;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -99,7 +101,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// sdk版本号，只读
 @property (nonatomic,copy,readonly) NSString *sdkVersion;
 
-
+/// 输入输出坐标类型(使用 gcj02 坐标系)，210903 add
+@property (nonatomic,strong, readonly) HTMSearchCoorTypeModel *ioCoorTypeModel;
 
 @end
 

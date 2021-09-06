@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 @class HTMGeoCoor;
 
+@class HTMSearchCoorTypeModel;
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -37,6 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 指定地图（建筑）id, 非必须
 @property(nonatomic, copy) NSString *mapId;
+
+/// 输入输出坐标类型(使用 gcj02 坐标系)，210903 add
+@property (nonatomic,strong, readonly) HTMSearchCoorTypeModel *ioCoorTypeModel;
 
 @end
 

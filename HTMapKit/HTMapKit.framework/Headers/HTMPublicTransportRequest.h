@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@class HTMSearchCoorTypeModel;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -83,6 +85,9 @@ NS_ASSUME_NONNULL_BEGIN
 1.当只为true时，路径规划终点将只规划到门口 （目前只支持室内的门）
 2.默认值为false */
 @property (nonatomic, assign) BOOL toDoor;
+
+/// 输入输出坐标类型(使用 gcj02 坐标系)，210903 add
+@property (nonatomic,strong, readonly) HTMSearchCoorTypeModel *ioCoorTypeModel;
 
 @end
 
