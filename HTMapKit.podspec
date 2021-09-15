@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTMapKit'
-  s.version          = '0.15.0'
+  s.version          = '0.16.0'
   s.summary          = 'A short description of HTMapKit.'
 
 # This description is used to generate tags and improve search results.
