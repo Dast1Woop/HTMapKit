@@ -215,7 +215,7 @@ NS_ASSUME_NONNULL_BEGIN
  根据当前GPS获取所在区域列表 结果
 
  @param request HTMRegionLocationRequest 请求对象
- @param responseArr HTMRegionLocationResponse对象组成的数组
+ @param responseArr HTMRegionInfoResponse对象组成的数组
  */
 - (void)onRegionLocationSearchDone:(HTMRegionLocationRequest *)request responseArray:(NSArray<HTMRegionInfoResponse *> *)responseArr;
 
@@ -229,7 +229,7 @@ NS_ASSUME_NONNULL_BEGIN
  根据区域id 获取树状区域
  
  @param request HTMRegionLocationRequest 请求对象
- @param responseArr HTMRegionLocationResponse对象组成的数组
+ @param responseArr HTMRegionInfoResponse对象组成的数组
  */
 - (void)onSubRegionsSearchDone:(HTMSubRegionsRequest *)request responseArray:(NSArray<HTMRegionInfoResponse *> *)responseArr;
 

@@ -72,9 +72,10 @@ FOUNDATION_EXPORT const unsigned char HTMapKitVersionString[];
 #import <HTMapKit/HTMPublicTransportRequest.h>
 #import <HTMapKit/HTMPublicTransportResponse.h>
 
-//#import <HTMapKit/HTMSimulateNavigator.h>
-
 #import <HTMapKit/HTMVersion.h>
 #import <HTMapKit/HTMSearchCoorTypeModel.h>
+
+#import <HTMapKit/HTMSimulateNavigator.h>
+
 
 

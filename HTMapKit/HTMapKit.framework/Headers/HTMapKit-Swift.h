@@ -246,6 +246,12 @@ SWIFT_CLASS("_TtC8HTMapKit18HTMRouteDrawConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC8HTMapKit24HTMSimulateNavAnnotation")
+@interface HTMSimulateNavAnnotation : MAPointAnnotation
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MAMapView;
 @class UIPickerView;
 @class HTMFloorModel;
@@ -288,10 +294,12 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 /// 更新已走路线画线，内部会先调用 clearRouteWalked() 移除旧的已走路线画线
 /// \param index 所在路段下标
 ///
-/// \param projectionCoor 投影点坐标
+/// \param projectionCoorGcj02 投影点坐标
 ///
 - (void)updateRoutePathUserWalkedWithPathIndex:(NSUInteger)index projectionCoorGcj02:(CLLocationCoordinate2D)projectionCoorGcj02;
 - (void)clearRoutesOfWholeBaseAndWalked;
+- (void)clearRouteWalked;
+- (HTMSimulateNavAnnotation * _Nonnull)addSimulateLocateAnnotationWithCoorGCJ02:(CLLocationCoordinate2D)coorGCJ02 imageName:(NSString * _Nonnull)imageName imageBounds:(CGRect)imageBounds SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class HTMHeadingMoniter;

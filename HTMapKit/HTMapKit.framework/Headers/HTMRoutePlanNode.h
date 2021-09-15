@@ -66,6 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (CLLocationCoordinate2D)getMinLatAndMinLngWith:(NSArray <HTMRoutePlanNode *>  *)arr;
 
++ (instancetype)getObjWithNodeA:(HTMRoutePlanNode *)nodeA nodeB:(HTMRoutePlanNode *)nodeB lanEnTa:(double)lanEnTa;
+
 @end
 
 NS_ASSUME_NONNULL_END
