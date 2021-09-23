@@ -260,6 +260,7 @@ SWIFT_CLASS("_TtC8HTMapKit24HTMSimulateNavAnnotation")
 enum HTUserTrackingMode : NSInteger;
 @class NSCoder;
 @class NSError;
+@class HTMRegionInfoResponse;
 
 SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @interface HTMapView : UIView
@@ -300,6 +301,14 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 - (void)clearRoutesOfWholeBaseAndWalked;
 - (void)clearRouteWalked;
 - (HTMSimulateNavAnnotation * _Nonnull)addSimulateLocateAnnotationWithCoorGCJ02:(CLLocationCoordinate2D)coorGCJ02 imageName:(NSString * _Nonnull)imageName imageBounds:(CGRect)imageBounds SWIFT_WARN_UNUSED_RESULT;
+/// 添加 区域信息对象 对应的高亮区域图层，相同 idCustom 的区域无法重复添加
+/// \param regionInfo HTMRegionInfoResponse 对象
+///
+- (void)addOverlayWithRegionInfo:(HTMRegionInfoResponse * _Nonnull)regionInfo;
+/// 移除 区域信息对象 对应的高亮区域图层，只有添加过图层的区域对象（idCustom唯一标识）才会被移除
+/// \param regionInfo HTMRegionInfoResponse 对象
+///
+- (void)removeOverlayWithRegionInfo:(HTMRegionInfoResponse * _Nonnull)regionInfo;
 @end
 
 @class HTMHeadingMoniter;

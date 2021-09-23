@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class HTMGeometry;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -105,10 +106,10 @@ eg:
     ],
     "type": "MultiPolygon"
 } */
-@property (nonatomic, copy) NSDictionary *geometry;
+@property (nonatomic, strong) HTMGeometry *geometry;
 
-//获取geometry对应的Json字符串
-- (NSString *)getGeometryJsonString;
+////获取geometry对应的Json字符串
+//- (NSString *)getGeometryJsonString;
 
 
 @end

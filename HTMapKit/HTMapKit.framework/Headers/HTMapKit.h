@@ -76,6 +76,6 @@ FOUNDATION_EXPORT const unsigned char HTMapKitVersionString[];
 #import <HTMapKit/HTMSearchCoorTypeModel.h>
 
 #import <HTMapKit/HTMSimulateNavigator.h>
-
+#import <HTMapKit/HTMGeometry.h>
 
 
