@@ -242,14 +242,24 @@ SWIFT_CLASS("_TtC8HTMapKit18HTMRouteDrawConfig")
 @property (nonatomic, strong) UIImage * _Nonnull dimImage;
 /// 默认：灰色    #808080    128,128,128
 @property (nonatomic, strong) UIImage * _Nonnull walkedPartImage;
-- (nonnull instancetype)initWithPath:(HTMRoutePath * _Nonnull)path highlightedFloorID:(NSInteger)highlightedFloorID highlightedImage:(UIImage * _Nullable)highlightedImage dimImage:(UIImage * _Nullable)dimImage walkedPartImage:(UIImage * _Nullable)walkedPartImage;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPath:(HTMRoutePath * _Nonnull)path highlightedFloorID:(NSInteger)highlightedFloorID highlightedImage:(UIImage * _Nullable)highlightedImage dimImage:(UIImage * _Nullable)dimImage walkedPartImage:(UIImage * _Nullable)walkedPartImage OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
 SWIFT_CLASS("_TtC8HTMapKit24HTMSimulateNavAnnotation")
 @interface HTMSimulateNavAnnotation : MAPointAnnotation
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8HTMapKit23HTMTouchPointAnnotation")
+@interface HTMTouchPointAnnotation : MAPointAnnotation
+@property (nonatomic, strong) UIImage * _Nullable image;
+- (nonnull instancetype)initWithImage:(UIImage * _Nonnull)image coor:(CLLocationCoordinate2D)coor imageBounds:(CGRect)imageBounds OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class MAMapView;
@@ -261,6 +271,7 @@ enum HTUserTrackingMode : NSInteger;
 @class NSCoder;
 @class NSError;
 @class HTMRegionInfoResponse;
+@class NSValue;
 
 SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 @interface HTMapView : UIView
@@ -309,6 +320,14 @@ SWIFT_CLASS("_TtC8HTMapKit9HTMapView")
 /// \param regionInfo HTMRegionInfoResponse 对象
 ///
 - (void)removeOverlayWithRegionInfo:(HTMRegionInfoResponse * _Nonnull)regionInfo;
+/// 添加或刷新 地面层路线覆盖物
+/// \param coors 携带 CLLocationCoordinate2D 信息的 NSValue 对象数组
+///
+///
+/// returns:
+/// NSError? 类型对象
+- (NSError * _Nullable)addOrUpdatePolyLineOverLayOfGroundLevelWithCoors:(NSArray<NSValue *> * _Nonnull)coors SWIFT_WARN_UNUSED_RESULT;
+- (void)removePolyLineOverLayOfGroundLevel;
 @end
 
 @class HTMHeadingMoniter;
